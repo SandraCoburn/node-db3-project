@@ -22,4 +22,4 @@ order by ProductName
 select [Order].Id, c.CompanyName, e.LastName
 from [Order] 
 join Customer as c on [Order].CustomerId = c.Id
-join Employee as e on c.Id = e.Id
+join Employee as e on [Order].EmployeeId = e.Id
